@@ -21,7 +21,7 @@ Use the following command to run QRLChecker, replacing `<URL>` with the URL of t
 ```
 QRLChecker/
 ├── components/
-│   ├── components.py	# Initializes key components 
+│   ├── components.py		# Initializes key components 
 │   ├── app_flow_manager.py	# Manages traffic of QRLogin app and app authorization requests
 │   ├── polling_manager.py	# Manages polling requests including url, flows, replayed flows, etc.
 │   └── qrcode_manager.py	# Manages variables and operations related to QR code
