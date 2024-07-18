@@ -42,6 +42,7 @@ class Analyzer:
 
 
     def check(self):
+        os.makedirs("intermediate_files", exist_ok=True)
         screenshot_path = "./intermediate_files/screenshot.png"
         if os.path.exists(screenshot_path):
             os.remove(screenshot_path)
@@ -61,7 +62,7 @@ class Analyzer:
                 self.prepare()
                 if not write_head:
                     wf.write("qrid: \n" + str(self.qrcode_manager.get_qrid()) + "\n\n")
-                    wf.write("F1\t\tF2\t\tF3\t\tF4\t\tF5\t\tF6\t\tF7\n")
+                    wf.write("F1\t\tF2\t\tF3\t\tF4\t\tF5\t\tF6\n")
                     write_head = True
                 res = self.detector.detect()
                 for i in res:
