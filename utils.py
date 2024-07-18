@@ -21,7 +21,6 @@ def extract_para(decoded_data):
     try:
         decoded_data = base64.b64decode(decoded_data).decode()
     except Exception:
-        # TODO: log error
         pass
 
     if decoded_data.startswith("http") or "://" in decoded_data:
