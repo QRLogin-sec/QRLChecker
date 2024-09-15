@@ -1,0 +1,17 @@
+{
+    "base": {
+      "qrid_name": "qrid",      
+      "polling_url": "https://xxx",
+      "generation_url": "https://xxx",
+      "authorization_url": "https://xxx"
+    },
+    "polling_response_format": {
+      "indicator": "status", 
+      "value": {
+        "unscanned": "0",
+        "scanned": "1",
+        "logged-in": "2",
+        "invalid": "3"
+      }
+    }
+  }
