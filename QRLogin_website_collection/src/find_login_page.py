@@ -81,7 +81,7 @@ async def handle_page_changes(domain, page):
                 page.wait_for_event('popup'),
                 return_exceptions=True
             ),
-            timeout=6  # 设置超时时间，单位为秒
+            timeout=6  
         )
     except asyncio.TimeoutError:
         logging.error(f'Return the original page if timeout occurs {domain}:{page}')
@@ -399,7 +399,6 @@ def has_human_verification(page_source):
         Returns:
             bool: True if human verification elements are found, False otherwise.
     """
-    # 判断页面内容是否包含关键字
     if any(keyword in page_source for keyword in HUMAN_VERIFICATION_KEYWORDS):
         return True
 
@@ -428,7 +427,6 @@ def synchronization_down_html_data_source(csv_file, folder_path):
             folder_path : Path to the folder containing HTML files.
 
     """
-    # 读取CSV文件
     with open(csv_file, 'r', newline='', encoding='utf-8') as file:
         reader = csv.reader(file)
         rows = list(reader)

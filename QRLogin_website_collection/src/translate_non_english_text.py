@@ -76,7 +76,6 @@ def translate_non_english_text(text, filename):
                     logging.error(f"Failed to translate text {filename}: {e}")
                     return None
             else:
-                # 分割文本为多个片段
                 text_slices = [text[i:i + length_max] for i in range(0, len(text), length_max)]
                 translations = []
 

@@ -1,6 +1,6 @@
 # ARTIFACTS
 
-The artifacts contain all the scripts and dataset involved in this paper, including the source code of detection pipeline and auditing tool, QRLChecker, as well as the dataset and the scripts for collecting QRLogin webstes.
+We comply with the open science policy by sharing our artifacts including the source code of detection pipeline and auditing tool, QRLChecker, as well as the dataset and the scripts for collecting QRLogin webstes.
 
 **Note that the code is available currently for paper review. To avoid potential abuse on real-world websites, we will make the code available only to vetted researchers or developers upon request and identity verification when publishing this paper.**
 
